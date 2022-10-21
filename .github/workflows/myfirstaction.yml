@@ -1,10 +1,8 @@
 name: Run Shell Command
 on: [push]
-
 jobs:
   run-shell-command:
     runs-on: ubuntu-latest
-    stepa:
-      - name: Echo a Sting
-        run: echo "This is my First YML"
-      
+    steps:
+      - name: Echo a String
+        run: echo "Hello world"
